@@ -12,3 +12,4 @@ Just run `python main.py <file_path>` where `<file_path>` is the path to the fil
 
 -   [ ] Installation Script
 -   [ ] Reload when one of the imported modules is changed
+-   [ ] Add logging
