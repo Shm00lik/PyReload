@@ -31,7 +31,7 @@ python <PATH TO PYRELOAD'S MAIN FILE> %*
 
 Then, add the folder containing the `.bat` file to your `PATH` environment variable.
 
-Now you can run PyReload anywhere by running `python main.py <file_path> <arg1> <arg2> ...`!
+Now you can run PyReload anywhere by running `pyreload <file_path> <arg1> <arg2> ...`!
 
 ## 🚧 TODO
 
