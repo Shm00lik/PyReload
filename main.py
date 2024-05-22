@@ -3,8 +3,6 @@ import time
 import subprocess
 import sys
 
-SCRIPT_NAME = "python"
-
 
 class PyReload:
     def __init__(self, interval: float = 1) -> None:
@@ -32,7 +30,10 @@ class PyReload:
         return self.get_modified_time() != self.last_time_modified
 
     def run_script(self) -> subprocess.Popen:
-        args = [SCRIPT_NAME, self.filename] + self.args
+        args = [sys.executable, self.filename] + self.args
+
+        print(f"Reloading: {self.filename}")
+
         return subprocess.Popen(args)
 
     def stop_current_subprocess(self) -> bool:
